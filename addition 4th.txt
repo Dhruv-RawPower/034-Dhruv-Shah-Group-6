@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+
+class Myclass()
+{
+private:
+	int num;
+public:
+Myclass()
+{
+this->num=0;
+}
+int getnum()
+{
+	return num;
+}
+void setnum(int num)
+{
+	this->num=num;
+}
+friend void operator + (Myclass &,Myclass &);
+};
+void operator +(Myclass&a,Myclass&b)
+{
+cout<<a.num+b.num<<endl;
+};
+int main()
+{
+Myclass m1(40);
+Myclass m2(50);
+m1+m2;
+return 0;
+}
