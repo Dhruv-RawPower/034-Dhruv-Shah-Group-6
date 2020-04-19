@@ -25,6 +25,6 @@ Myclass m1(40);
 Myclass m2(50);
 Myclass m3;
 m3=m1+m2;
+cout<<m3.getnum()<<endl;
 return 0;
 }
-cout<<m3.getnum()<<endl;
