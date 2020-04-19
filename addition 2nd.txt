@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+
+class Myclass()
+{
+private:
+	int num;
+public:
+Myclass()
+{
+this->num=0;
+}
+int getnum()
+{
+	return num;
+}
+void setnum(int num)
+{
+	this->num=num;
+}
+};
+int main()
+{
+Myclass m1(40);
+Myclass m2(50);
+Myclass m3;
+m3=m1+m2;
+return 0;
+}
+cout<<m3.getnum()<<endl;
