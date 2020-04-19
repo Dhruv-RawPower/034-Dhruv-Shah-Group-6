@@ -20,7 +20,7 @@ void setnum(int num)
 }
 void operator +(Myclass &ref)
 {
-cout<<num=ref.num<<endl;
+cout<<num+ref.num<<endl;
 }
 };
 int main()
