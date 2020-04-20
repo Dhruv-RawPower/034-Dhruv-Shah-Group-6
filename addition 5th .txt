@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+class add{
+public:
+	int num1,num2;
+}
+void ask()
+{
+	cout<<"enter a num1"<<endl;
+	cin>>num1;	
+	cout<<"enter a num2"<<endl;
+	cin>>num2;
+}
+int sum(int n1,int n2)
+{
+	return n1+n2;
+}
+void show()
+{
+	cout<<sum(num1,num2);
+}
+int main()
+{
+add obj;
+obj.ask();
+obj.show();
+return 0;
+}
